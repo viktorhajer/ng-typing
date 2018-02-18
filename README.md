@@ -41,6 +41,22 @@ Add ```TypingModule``` to your module's ```imports```
     <typing [message]="'Hello World!'" [referenceSpeed]="30" [typo]="false"></typing>
 ```
 
+### Input parameters
+
+| Signature        | Short Description | 
+| :------------- |:-------------| 
+| `message` | The message which should be animated. |
+| `referenceSpeed` | The reference speed in millisecond (the rendering time for a letter). It is 60ms by default.  |
+| `speedDeviation` | The deviation amount of the speed. It should be lower then the reference speed. 30ms by default.  |
+| `typo` | Field to enable the typing errors.  |
+| `typoProbability` | The probability of the typo in percent. It is 5% by default (maximum value is 80%). |
+
+### Output emmiters
+
+| Signature        | Short Description | 
+| :------------- |:-------------| 
+| `onCompleted` | Fired when the animation is completed. |
+
 ### Contribute
 [See CONTRIBUTING.md](CONTRIBUTING.md)
 
