@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
-  "name": "simple-pdf-viewer",
+  "name": "ng-typing",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
@@ -8,30 +8,27 @@
     "email": "viktor.hajer@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/viktorhajer/simple-pdf-viewer/issues"
+    "url": "https://github.com/viktorhajer/ng-typing/issues"
   },
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/viktorhajer/simple-pdf-viewer.git"
+    "url": "https://github.com/viktorhajer/ng-typing.git"
   },
   "keywords": [
     "angular",
     "angular2",
     "angular4",
     "angular5",
-    "pdf",
-    "angular-pdf",
-    "simple-pdf",
-    "pdf-viewer",
-    "document-viewer",
+    "typing",
+    "type-on",
+    "typewriter",
+    "effect",
     "ionic"
   ],
-  "homepage": "https://github.com/viktorhajer/simple-pdf-viewer#readme",
+  "homepage": "https://github.com/viktorhajer/ng-typing#readme",
   "peerDependencies": {
-    "@angular/core": "^5.2.0",
-    "@types/pdfjs-dist": "0.1.1",
-    "pdfjs-dist": "1.10.88"
+    "@angular/core": "^5.2.0"
   },
   "ngPackage": {
     "lib": {

@@ -1,16 +1,43 @@
 {
   "name": "ng-typing",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "name": "Viktor Hajer",
+    "email": "viktor.hajer@gmail.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "deploy": "ng build --prod --output-path docs --base-href \"https://viktorhajer.github.io/ng-typing/\"",
+    "packagr": "ng-packagr -p libs/ng-typing/package.json",
+    "prerelease": "npm run packagr",
+    "release": "np"
   },
-  "private": true,
+  "bugs": {
+    "url": "https://github.com/viktorhajer/ng-typing/issues"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viktorhajer/ng-typing.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "angular5",
+    "typing",
+    "type-on",
+    "typewriter",
+    "effect",
+    "ionic"
+  ],
+  "homepage": "https://github.com/viktorhajer/ng-typing#readme",
+  "peerDependencies": {
+    "@angular/core": "^5.2.0"
+  },
   "dependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",

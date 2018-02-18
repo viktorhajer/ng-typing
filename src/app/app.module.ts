@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TypingModule } from '../../libs/ng-typing';
 
 
 @NgModule({
@@ -10,7 +11,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, TypingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
