@@ -2,7 +2,7 @@
 
 * Clone the project
 ```
-git clone https://github.com/viktorhajer/simple-pdf-viewer.git
+git clone https://github.com/viktorhajer/ng-typing.git
 ```
 
 * Install dependencies
@@ -20,6 +20,6 @@ npm start
 http://localhost:4200/
 ```
 
-* Make changes under `src/`
+* Make changes under `libs/`
 
 * Create pull request
