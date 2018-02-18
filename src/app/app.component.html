@@ -1,0 +1,48 @@
+
+<h1>Type-on Effect Component</h1>
+
+<div id="container">
+
+    <div class="example" [hidden]="!displayed">
+      <div class="head">
+        Default (normal typing speed and few errors):
+      </div>
+      <div class="output">
+        <typing #typ [message]=''></typing>
+      </div>
+      <div class="code">
+        &lt;typing #typ [message]='...'&gt;&lt;/typing&gt;
+      </div>
+    </div>
+
+    <div class="example color2" [hidden]="!displayed">
+      <div class="head">
+        Slow without typo:
+      </div>
+      <div class="output">
+        <typing #typ [message]='' [referenceSpeed]="300" [typo]="false"></typing>
+      </div>
+      <div class="code">
+        &lt;typing #typ [message]='...' [referenceSpeed]="300" [typo]="false"&gt;&lt;/typing&gt;
+      </div>
+    </div>
+
+      <div class="example" [hidden]="!displayed">
+        <div class="head">
+          Fast with too many typing errors:
+        </div>
+        <div class="output">
+          <typing #typ [message]='' [referenceSpeed]="50" [typo]="true" [typoProbability]="50"></typing>
+        </div>
+        <div class="code">
+          &lt;typing #typ [message]='...' [referenceSpeed]="50" [typo]="true" [typoProbability]="50"&gt;&lt;/typing&gt;
+        </div>
+      </div>
+
+    <div class="form">
+      <input type="text" #msg placeholder="Type a message..." value="Hi Buddy! How are you?" />
+      <button (click)="showMessage(msg.value)">Show</button>
+    </div>
+
+</div>
+
