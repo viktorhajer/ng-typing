@@ -22,9 +22,24 @@ This is a simple type-on effect component for angular/ionic websites.
 
 ### Features
 
-* TBD
+* Easy to use
+* Reference animation speed can be defined
+* With the ```Deviation``` parameter the speed can be randomized 
+* Typo can be turn on/off and in case of ```type``` the probability also can be changed (in percent) 
 
 ### Installation Instructions and Usage
+
+```
+npm install ng-typing --save
+```
+
+Add ```TypingModule``` to your module's ```imports```
+
+### In component HTML
+
+```html
+    <typing [message]="'Hello World!'" [referenceSpeed]="30" [typo]="false"></typing>
+```
 
 ### Contribute
 [See CONTRIBUTING.md](CONTRIBUTING.md)
