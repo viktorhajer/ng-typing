@@ -20,9 +20,19 @@ export class TypingComponent implements OnInit {
   chrs: string[] = [];
   position: number = 0;
   displayedChrs: string = '';
+  progress: boolean = false;
   
   ngOnInit() {
-    if (this.message && this.message.trim().length > 0) {
+    this.show();
+  }
+
+  show(message?: string) {
+    if (message)  {
+      this.message = message;
+    }
+    if (!this.progress && this.message && this.message.trim().length > 0) {
+      this.progress = true;
+      this.initParameters();
       if (this.referenceSpeed == 0) {
         this.displayedChrs = this.message;
       } else {
@@ -30,6 +40,12 @@ export class TypingComponent implements OnInit {
         setTimeout(this.displayCharacter.bind(this), this.randomSpeed())
       }
     }
+  }
+
+  private initParameters() {
+    this.chrs = [];
+    this.position = 0;
+    this.displayedChrs = '';
   }
 
   private displayCharacter() {
@@ -40,6 +56,7 @@ export class TypingComponent implements OnInit {
       this.displayedChrs += this.chrs[this.position++];
       if (this.position == this.chrs.length) {
         this.onCompleted.emit();
+        this.progress = false;
       } else {
         setTimeout(this.displayCharacter.bind(this), this.randomSpeed());
       }
