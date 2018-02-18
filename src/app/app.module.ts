@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { TypingModule } from '../../libs/ng-typing';
-
+import { TypingModule } from '../../public_api';
 
 @NgModule({
   declarations: [
